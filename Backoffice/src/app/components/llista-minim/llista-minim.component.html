@@ -1,0 +1,7 @@
+<div class="item-minim">
+    <app-item-minim 
+    (deleteConfig)="deleteOneConfig($event)"
+    (updateConfig)="updateOneConfig($event)"
+    [config]="configuration" 
+    *ngFor="let configuration of configurations"></app-item-minim>
+</div>

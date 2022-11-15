@@ -13,8 +13,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { MaterialModule } from './material.module';
 import { FormComponent } from './components/form/form.component';
 import { CreateParking2Component } from './components/create-parking2/create-parking2.component';
+import { LlistaMinimComponent } from './components/llista-minim/llista-minim.component';
+import { FormulariMinimComponent } from './components/formulari-minim/formulari-minim.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
+import { ItemMinimComponent } from './components/item-minim/item-minim.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
     ParkingsComponent,
     FormComponent,
     ConfirmationDialogComponent,
-    CreateParking2Component
+    CreateParking2Component,
+    FormulariMinimComponent,
+    LlistaMinimComponent,
+    ItemMinimComponent
 
   ],
   imports: [

@@ -27,4 +27,10 @@ export class AppComponent {
   goToParkingList() {
     this.router.navigate(['/', 'parkings']);
   }
+  goFormulariMinim(){
+    this.router.navigate(['/', 'FormMinim']);
+  }
+  goLlistaMinim(){
+    this.router.navigate(['/', 'LlistaMinim']);
+  }
 }

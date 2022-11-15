@@ -1,0 +1,15 @@
+<div class="config">
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>{{config.user}}</mat-card-title>
+            </mat-card-header>
+        <mat-card-content>User language: {{config.language}}</mat-card-content>
+        <mat-card-content>User letter size: {{config.letterSize}}</mat-card-content>
+        <mat-card-content>User last change: {{config.lastChange}}</mat-card-content>
+        <mat-card-actions><button mat-raised-button color="warn" (click)="delete()">delete</button></mat-card-actions>
+            <input name="newlanguage" type="text" id="newlanguage" placeholder="new Language" #newlanguage>
+            <input name="newletterSize" type="text" id="newletterSize" placeholder="new Letter Size" #newletter>
+            <input name="newDate" type="text" id="newDate" placeholder="Insert today's date" #newDate>
+        <mat-card-actions><button mat-raised-button color="warn" (click)="update(newlanguage.value, newletter.value, newDate.value)">update</button></mat-card-actions>
+    </mat-card>
+</div>

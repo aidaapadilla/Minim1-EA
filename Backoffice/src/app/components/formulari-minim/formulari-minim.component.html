@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">Crear una nova configuració</mat-toolbar>
+<router-outlet></router-outlet>
+<form [formGroup]="configForm" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>New Language</mat-label>
+            <input matInput formControlName="language">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>New letter size</mat-label>
+            <input matInput formControlName="letterSize">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput formControlName="date">
+        </mat-form-field>
+    </p>
+    <p>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!configForm.valid">Submit</button>
+    </p>
+
+</form>
